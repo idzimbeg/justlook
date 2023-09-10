@@ -12,7 +12,7 @@ export const Movies: React.FC = () => {
   const { popularMovies, isLoading } = usePopularMovies();
   const { nowPlaying } = useNowPlayingMovies();
   const { topRated } = useTopRatedMovies();
-  const { favorites, isFavorite, toggleFavorite } = useFavorites();
+  const { isFavorite, toggleFavorite } = useFavorites();
 
   const { moviesByGenre } = useSearchMovieByGenre(35);
 
@@ -42,7 +42,6 @@ export const Movies: React.FC = () => {
           data={nowPlaying}
           title="Trending now"
           status="Trending now"
-          currentFavorites={favorites}
           isFavorite={isFavorite}
           toggleFavorite={toggleFavorite}
           className="w-full"
@@ -63,7 +62,6 @@ export const Movies: React.FC = () => {
           data={topRated}
           title="Popular"
           status="Popular"
-          currentFavorites={favorites}
           isFavorite={isFavorite}
           toggleFavorite={toggleFavorite}
           className="w-full"
@@ -90,9 +88,7 @@ export const Movies: React.FC = () => {
       <MovieGrid
         toggleFavorite={toggleFavorite}
         isFavorite={isFavorite}
-        favorites={favorites}
         data={[{ results: topMovies }, { results: topNowPlaying }, { results: topPopularMovies }]}
-        currentFavorites={[]}
         backdrop={false}
         title="Top rated"
         className="mb-8"
@@ -107,7 +103,6 @@ export const Movies: React.FC = () => {
           data={moviesByGenre}
           toggleFavorite={toggleFavorite}
           isFavorite={isFavorite}
-          currentFavorites={favorites}
           className="m-0 mb-6 p-0"
           cardClassName="md:h-72 h-56"
           backdrop={false}
@@ -131,7 +126,6 @@ export const Movies: React.FC = () => {
           data={popularMovies}
           toggleFavorite={toggleFavorite}
           isFavorite={isFavorite}
-          currentFavorites={favorites}
           className="m-0 mb-6 p-0"
           cardClassName="h-56 md:h-72"
           backdrop={false}

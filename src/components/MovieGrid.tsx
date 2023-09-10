@@ -19,7 +19,6 @@ interface MovieGridProps extends SliderProps {
 
 export const MovieGrid: React.FC<MovieGridProps> = ({
   data,
-  currentFavorites,
   className,
   cardClassName,
   title,
@@ -60,7 +59,6 @@ export const MovieGrid: React.FC<MovieGridProps> = ({
                 poster={movie.movie.poster_path}
                 isFavorite={isFavorite}
                 toggleFavorite={toggleFavorite}
-                currentFavorites={currentFavorites}
                 className={cx('h-32 w-1/2 md:h-full md:w-full', cardClassName)}
                 overview={movie.movie.overview}
                 backdrop={backdrop}

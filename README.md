@@ -26,6 +26,28 @@ JustLook is a movie app that allows users to discover and explore movies from TM
 - Local Storage: Used for storing favorite movies on the user's device.
 - Tailwind CSS: A utility-first CSS framework for styling.
 
+## Building a Docker Image
+
+You can also run the JustLook app in a Docker container. To do this, follow these steps:
+Make sure you have Docker installed on your machine.
+Clone the repository to your local machine if you haven't already.
+
+- Navigate to the project directory:
+
+  ```
+      cd JustLook
+  ```
+
+- Build the Docker image using the provided Dockerfile:
+
+  ```
+      docker build --build-arg ARG_REACT_APP_MOVIEDB_API_KEY={your_api_key} -t justlook-app .
+  ```
+
+## Deployed Site
+
+You could also visit the deployed site at https://justlook.netlify.app/
+
 ## Acknowledgments
 
 Thanks to TMDB for providing the movie data.

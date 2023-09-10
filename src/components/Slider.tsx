@@ -66,7 +66,6 @@ const SlideButton = ({ direction }: { direction: string }) => {
 
 export const Slider: React.FC<SliderProps> = ({
   data,
-  currentFavorites,
   slidesPerView,
   className,
   status,
@@ -102,7 +101,6 @@ export const Slider: React.FC<SliderProps> = ({
               poster={movie.poster_path}
               isFavorite={isFavorite}
               toggleFavorite={toggleFavorite}
-              currentFavorites={currentFavorites}
               className={cx('h-64', cardClassName)}
               overview={movie.overview}
               backdrop={backdrop}

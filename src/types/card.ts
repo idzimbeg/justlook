@@ -5,7 +5,6 @@ export interface CardProps {
   title: string;
   status: string | number;
   poster: string;
-  currentFavorites: any[];
   release_date?: string;
   vote_average?: number;
   className?: string;
