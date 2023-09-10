@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# JustLook - Movie App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+JustLook is a movie app that allows users to discover and explore movies from TMDB. It provides features for searching, viewing movie details, and managing favorite movies using local storage. Movies can be sorted by genre and popularity.
 
-## Available Scripts
+![JustLook Screenshot](./public/image/screenshot.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Search for movies by title.
+- View information about a movie, including title, release date, tagline, genres, rating, revenue, and synopsis.
+- Add and remove movies from your list of favorites. Your favorites are stored locally.
+- Sort movies by genre or popularity.
+- Discover a wide range of movies from TMDB's extensive database.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Enter a movie title in the search bar to search for movies by name.
+- Click on a movie card to view detailed information about that movie.
+- Click the heart icon to add or remove a movie from your favorites list.
+- Use the genre and popularity filters to sort and discover movies.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js: A JavaScript library for building user interfaces.
+- TMDB API: The Movie Database API for fetching movie data.
+- Local Storage: Used for storing favorite movies on the user's device.
+- Tailwind CSS: A utility-first CSS framework for styling.
 
-### `npm run build`
+## Acknowledgments
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Thanks to TMDB for providing the movie data.
+Special thanks to the creators and contributors of the libraries and frameworks used in this project.
